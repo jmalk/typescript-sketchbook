@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc greeter.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^3.5.3"
   }
 }
