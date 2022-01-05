@@ -21,3 +21,20 @@ function greeter(person: Person) {
 let user = new Student("Jane", "M", "User");
 
 document.body.textContent = greeter(user);
+
+interface TwoDCoord {
+  x: number;
+  y: number;
+}
+
+interface ThreeDCoord extends TwoDCoord {
+  z: number;
+}
+
+function printXY(coord: TwoDCoord) {
+  console.log(`X: ${coord.x}`)
+  console.log(`Y: ${coord.y}`)
+}
+
+const three = { x: 4, y: 5, z: 2};
+printXY(three)
